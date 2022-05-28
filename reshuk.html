@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reshuk.css">
+  <title>Reshuk Sapkota</title>
+  <script src="rs.js"></script>
+  <link rel="shortcut icon" href="ability.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <a href="reshuk.html" style="color: rgb(0, 0, 0);text-decoration: none; font-size: 25px;">Reshuk Sapkota</a>
+
+    <ul class="nav-menu">
+    <li class="nav-link">
+      <a href="#home" class="nav-link">Home</a>
+    </li>
+    <li class="nav-link">
+      <a href="#About" class="nav-link">About</a>
+    </li>
+    <li class="nav-link">
+      <a href="#Contact" class="nav-link">Contact</a>
+    </li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</header>
+<section>
+  <div id="home">
+    <div class="intro">
+    
+     <h1>Hi , my name is <br>
+       reshuk sapkota
+       <p class="p1" style="
+       	margin: auto;
+    text-align: center;
+	color: rgb(0, 0, 0);
+	position: absolute;
+	right: 0px;
+	width: 300px;
+	padding: 10px;
+   font-size: 15px;
+
+       ">
+         i'm intrested in Web-Development <br>
+         and i,m 15 years old
+      </p></h1>
+    </div>
+  </div>
+  <div class="About" id="About">
+    <h2 style="padding: 10px 20px; font-size: 30px;">About Me</h2>
+    <hr style="width: 30px; height: 5px; border: 4px solid rgb(255, 255, 0); ">
+    <p class="about">Hi my name is reshuk sapkota.
+    i'm 15 years old  <br>  beginner web-developer from nepal  </p>
+    <p class="about">i was 14 years old when i started programming <br>
+    currently  i read in grade 9  </p>
+    <h3 style="font-size: 30px;">What can i do for you?</h3>
+    <hr style="width: 30px; height: 5px; border: 4px solid rgb(255, 255, 0); ">
+      <div class="images">
+        <img src="html.jpg"> <br>
+        
+        <img src="editing.jpg">
+        
+      </div>
+      <div class="con">
+        <p style="text-align: center;">i can work for font end development for your website. <br>
+        i can also edit videos for your Youtube and Facebook channel .  </p>
+  
+      </div>
+
+
+
+  </div>
+</section>
+<footer id="Contact">
+  <a href="https://facebook.com/reshuk.sapkota"><i class="fa fa-facebook" style="color: #000;"></i></a>
+  <a href="https://instagram.com/reshuk49"><i class="fa fa-instagram" style="color: #000;"></i></a>
+  <a href="https://github.com/reshuksap"><i class="fa fa-github" style="color: #000;"></i></a>
+   copyright 2022 reshuk sapkota 
+
+</footer>
+<script>
+  const hamburger =document.querySelector(".hamburger");
+  const navMenu =document.querySelector(".nav-menu");
+  
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active")
+    navMenu.classList.toggle("active")
+  })
+  document.querySelectorAll(".nav-link") .forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  }))
+  </script>
+</body>
+</html>
